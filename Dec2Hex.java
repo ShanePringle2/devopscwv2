@@ -1,6 +1,6 @@
-import java.util.Scanner;
+
 import java.util.logging.Logger;
-import java.util.logging.Level;
+
 
 public class Dec2Hex {
     private static final Logger logger = Logger.getLogger(Dec2Hex.class.getName());
