@@ -1,5 +1,6 @@
-import java.til.Scanner;
-public class Dex2Hex {
+import java.util.Scanner;
+
+public class Dec2Hex {
     public static void main(String[] args) {
         if (args.length == 0) {
             System.out.println("Error: No input provided.");
