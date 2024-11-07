@@ -21,7 +21,8 @@ public class Dec2Hex {
 
         try {
             int input = Integer.parseInt(args[0]);
-            logger.info(String.format("Hexadecimal: %s", Integer.toHexString(input)));
+            String hexString = Integer.toHexString(input);
+            logger.info(String.format("Hexadecimal: %s", hexString));
         } catch (NumberFormatException e) {
             logger.severe("Error: Input is not an integer.");
         }
