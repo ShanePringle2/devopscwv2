@@ -1,18 +1,24 @@
 import java.util.Scanner;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class Dec2Hex {
+    private static final Logger logger = Logger.getLogger(Dec2Hex.class.getName());
+
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Error: No input provided.");
+            logger.severe("Error: No input provided.");
             return;
         }
+        
         try {
             int input = Integer.parseInt(args[0]);
-            System.out.println("Hexadecimal: " + Integer.toHexString(input));
+            logger.info("Hexadecimal: " + Integer.toHexString(input));
         } catch (NumberFormatException e) {
-            System.out.println("Error: Input is not an integer.");
+            logger.severe("Error: Input is not an integer.");
         }
     }
 }
+
 
 
