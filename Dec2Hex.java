@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.logging.*;
 
 public class Dec2Hex {
